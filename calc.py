@@ -1,7 +1,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-#fuck you
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -23,6 +23,7 @@ class Ui_MainWindow(object):
         self._0.setFont(font)
         self._0.setObjectName("_0")
         self._0.clicked.connect(self.b_0)
+        # self._0.setStyleSheet("background:red ; color:white")
         
         self._1 = QtWidgets.QPushButton(self.centralwidget)
         self._1.setGeometry(QtCore.QRect(20, 300, 75, 71))
@@ -201,6 +202,9 @@ class Ui_MainWindow(object):
         self._equall.setObjectName("_equall")
         self._equall.clicked.connect(self.b_equall)
         
+        self.label2 = QtWidgets.QLabel(self.centralwidget)
+        self.label2.setGeometry(QtCore.QRect(15, 17, 400, 99))
+        self.label2.setStyleSheet("background:balck")
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(20, 19, 391, 91))
         font = QtGui.QFont()
@@ -210,6 +214,7 @@ class Ui_MainWindow(object):
         font.setWeight(50)
         self.label.setFont(font)
         self.label.setObjectName("label")
+        self.label.setStyleSheet("color:white")
         
         self._ac = QtWidgets.QPushButton(self.centralwidget)
         self._ac.setGeometry(QtCore.QRect(260, 140, 75, 71))
@@ -221,6 +226,7 @@ class Ui_MainWindow(object):
         self._ac.setFont(font)
         self._ac.setObjectName("_ac")
         self._ac.clicked.connect(self.button_ac)
+        self._ac.setStyleSheet("color:red")
         
         
         self._mod = QtWidgets.QPushButton(self.centralwidget)
