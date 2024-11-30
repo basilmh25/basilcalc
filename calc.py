@@ -1,7 +1,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-
+#fuck you
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
